@@ -2,12 +2,16 @@
   "name": "8min-presents-geo",
   "version": "1.0.0",
   "description": "讓AI幫你曝光：從SEO到GEO的網站進化 - BNI簡報",
-  "main": "index.html",
+  "main": "dist/index.html",
   "scripts": {
-    "start": "python3 -m http.server 8000",
-    "dev": "python3 -m http.server 8000",
-    "build": "echo 'No build step required for static HTML'",
-    "deploy": "echo 'Deploy to GitHub Pages'"
+    "dev": "npm run build && python3 -m http.server 8000",
+    "start": "npm run build && python3 -m http.server 8000",
+    "build": "node build.js && npm run build:stylus",
+    "build:pug": "node build.js",
+    "build:stylus": "stylus src/styles/*.styl -o dist/css/",
+    "build:scripts": "cp src/scripts/*.js dist/js/",
+    "watch": "npm run build && concurrently \"pug src/templates/*.pug -o dist/ -w\" \"stylus src/styles/*.styl -o dist/css/ -w\"",
+    "deploy": "npm run build && echo 'Deploy to GitHub Pages'"
   },
   "keywords": [
     "presentation",
@@ -15,7 +19,9 @@
     "SEO",
     "AI",
     "BNI",
-    "website-optimization"
+    "website-optimization",
+    "pug",
+    "stylus"
   ],
   "author": "品耀數位行銷",
   "license": "MIT",
@@ -24,6 +30,10 @@
     "url": "https://github.com/yourusername/8min-presents-geo.git"
   },
   "homepage": "https://yourusername.github.io/8min-presents-geo",
-  "devDependencies": {},
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "stylus": "^0.62.0",
+    "concurrently": "^8.2.2"
+  },
   "dependencies": {}
 }

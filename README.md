@@ -89,25 +89,38 @@
 
 ```
 8MinPresents/
-├── index.html      # 主要HTML文件
-├── styles.css      # CSS樣式文件
-├── script.js       # JavaScript功能文件
-└── README.md       # 說明文件
+├── src/
+│   ├── templates/     # PUG 模板檔案
+│   │   └── index.pug
+│   ├── styles/        # STYLUS 樣式檔案
+│   │   └── main.styl
+│   ├── scripts/       # JavaScript 檔案
+│   │   └── script.js
+│   └── data/          # 資料檔案
+│       └── presentation.json
+├── dist/              # 編譯後檔案
+├── build.js           # 編譯腳本
+├── package.json       # 專案配置
+└── README.md          # 專案說明
 ```
 
 ## 自訂修改
 
 ### 修改內容
 
-如需修改簡報內容，請編輯 `index.html` 文件中對應的投影片區塊。
+如需修改簡報內容，請編輯 `src/data/presentation.json` 文件中的資料結構。
 
 ### 修改樣式
 
-如需調整視覺效果，請修改 `styles.css` 文件中的相關樣式。
+如需調整視覺效果，請修改 `src/styles/main.styl` 文件中的 STYLUS 樣式。
+
+### 修改模板
+
+如需調整 HTML 結構，請修改 `src/templates/index.pug` 文件中的 PUG 模板。
 
 ### 修改功能
 
-如需調整互動功能，請修改 `script.js` 文件中的 JavaScript 代碼。
+如需調整互動功能，請修改 `src/scripts/script.js` 文件中的 JavaScript 代碼。
 
 ## 瀏覽器相容性
 

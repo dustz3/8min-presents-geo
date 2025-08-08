@@ -1,0 +1,180 @@
+{
+  "presentation": {
+    "title": "讓 AI 幫你曝光",
+    "subtitle": "從 SEO 到 GEO 的網站進化",
+    "company": "品耀數位行銷",
+    "slides": [
+      {
+        "id": 1,
+        "title": "開場與趨勢鋪陳",
+        "content": {
+          "question": {
+            "title": "🤔 思考一下...",
+            "text": "您的網站是否準備好迎接AI搜尋時代？當客戶問AI時，您的網站內容能被準確引用嗎？"
+          },
+          "trends": {
+            "title": "AI搜尋時代已來臨",
+            "platforms": [
+              { "icon": "🤖", "name": "ChatGPT" },
+              { "icon": "🔍", "name": "Google SGE" },
+              { "icon": "💬", "name": "Bing Chat" }
+            ]
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "什麼是GEO？",
+        "subtitle": "生成式引擎優化",
+        "content": {
+          "definition": {
+            "title": "GEO = Generative Engine Optimization",
+            "description": "優化網站內容讓AI更容易理解、引用您的服務"
+          },
+          "comparison": {
+            "old": {
+              "title": "傳統SEO",
+              "description": "讓搜尋引擎找到您的網站"
+            },
+            "new": {
+              "title": "現代GEO",
+              "description": "讓AI理解並推薦您的網站"
+            }
+          },
+          "goal": {
+            "title": "🎯 核心目標",
+            "description": "網站被AI理解 → 網站被AI引用 → 網站被AI推薦"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "SEO vs GEO 對比",
+        "content": {
+          "table": {
+            "headers": ["面向", "傳統SEO", "現代GEO"],
+            "rows": [
+              ["目的", "提高搜尋排名", "讓AI理解並推薦網站"],
+              ["方式", "關鍵字優化", "網站內容語意優化"],
+              ["重點", "技術層面", "網站內容結構化"],
+              ["結果", "網站出現在搜尋結果", "網站內容出現在AI回答中"]
+            ]
+          },
+          "keyPoint": {
+            "title": "💡 關鍵差異",
+            "description": "GEO注重網站語意理解與結構化內容，讓AI能夠準確引用您的網站服務"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "常見錯誤 vs 好例子",
+        "content": {
+          "examples": {
+            "bad": {
+              "title": "❌ 網站錯誤示範",
+              "text": "我們提供專業的服務，品質優良，價格合理",
+              "explanation": "網站內容模糊，AI無法理解具體服務"
+            },
+            "good": {
+              "title": "✅ 網站正確示範",
+              "text": "我們提供婚禮攝影服務，包含：\n• 8小時拍攝 + 精修50張\n• 提供線上相簿\n• 價格：NTD 25,000起",
+              "explanation": "網站內容具體，AI可直接引用"
+            }
+          },
+          "tip": {
+            "title": "💡 網站優化提醒",
+            "description": "在網站上具體描述服務內容、價格、流程，讓AI能夠準確推薦給客戶"
+          }
+        }
+      },
+      {
+        "id": 5,
+        "title": "為什麼BNI會員的網站需要GEO？",
+        "content": {
+          "industries": [
+            { "icon": "📸", "name": "攝影師", "description": "婚禮、商業攝影" },
+            { "icon": "🍽️", "name": "餐飲業", "description": "餐廳、外燴服務" },
+            {
+              "icon": "🎓",
+              "name": "教育培訓",
+              "description": "課程、講座服務"
+            },
+            {
+              "icon": "💼",
+              "name": "顧問服務",
+              "description": "財務、法律諮詢"
+            }
+          ],
+          "aiFuture": {
+            "title": "🤖 AI是未來的「轉介紹機器」",
+            "description": "當客戶問AI：「推薦台北婚禮攝影師」\n您的網站內容決定了AI會不會推薦您的服務"
+          },
+          "bniConnection": {
+            "title": "💡 BNI精神",
+            "description": "透過網站GEO優化，讓更多潛在客戶透過AI找到您的服務"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "title": "品耀的網站GEO解法",
+        "content": {
+          "process": [
+            {
+              "step": 1,
+              "title": "網站內容分析",
+              "description": "檢視現有網站內容的AI理解度"
+            },
+            {
+              "step": 2,
+              "title": "GEO優化建議",
+              "description": "提供網站內容改善方案"
+            },
+            {
+              "step": 3,
+              "title": "網站內容重構",
+              "description": "重新撰寫AI友善的網站內容"
+            },
+            {
+              "step": 4,
+              "title": "持續監測",
+              "description": "追蹤網站被AI引用效果"
+            }
+          ],
+          "caseStudy": {
+            "title": "📊 網站優化前後對比",
+            "before": {
+              "title": "優化前",
+              "description": "網站內容模糊，AI無法引用"
+            },
+            "after": {
+              "title": "優化後",
+              "description": "網站內容具體，AI直接推薦"
+            }
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "立即行動",
+        "content": {
+          "cta": {
+            "title": "🎁 免費網站GEO健檢",
+            "description": "我們將為您分析現有網站內容，提供具體的GEO優化建議"
+          },
+          "contact": [
+            { "icon": "📧", "text": "Email: info@brandrize.com" },
+            { "icon": "📱", "text": "Line: @brandrize" },
+            { "icon": "🌐", "text": "Website: brandrize.com" }
+          ],
+          "qrCode": {
+            "icon": "📱",
+            "text": "掃描QR Code\n立即預約網站健檢"
+          },
+          "footer": "感謝聆聽 | 品耀數位行銷"
+        }
+      }
+    ]
+  }
+}

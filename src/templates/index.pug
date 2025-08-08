@@ -1,0 +1,173 @@
+doctype html
+html(lang="zh-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 讓AI幫你曝光：從SEO到GEO的網站進化
+    link(rel="stylesheet" href="css/styles.css")
+  
+  body
+    .presentation-container
+      //- 投影片 1: 開場與趨勢鋪陳
+      .slide.active#slide1
+        .slide-content
+          h1.main-title= presentation.title
+          h2.subtitle= presentation.subtitle
+          
+          .question-box
+            h3= slides[0].content.question.title
+            p.highlight-text= slides[0].content.question.text
+          
+          .trend-section
+            h3= slides[0].content.trends.title
+            .ai-platforms
+              each platform in slides[0].content.trends.platforms
+                .platform
+                  span.platform-icon= platform.icon
+                  span= platform.name
+          
+          .presenter-info
+            p= presentation.company
+      
+      //- 投影片 2: 什麼是GEO
+      .slide#slide2
+        .slide-content
+          h1= slides[1].title
+          h2.subtitle= slides[1].subtitle
+          
+          .definition-box
+            h3= slides[1].content.definition.title
+            p= slides[1].content.definition.description
+          
+          .comparison-section
+            .old-vs-new
+              .old
+                h4= slides[1].content.comparison.old.title
+                p= slides[1].content.comparison.old.description
+              .arrow →
+              .new
+                h4= slides[1].content.comparison.new.title
+                p= slides[1].content.comparison.new.description
+          
+          .core-goal
+            h3= slides[1].content.goal.title
+            p= slides[1].content.goal.description
+      
+      //- 投影片 3: SEO vs GEO 對比
+      .slide#slide3
+        .slide-content
+          h1= slides[2].title
+          
+          .comparison-table
+            table
+              thead
+                tr
+                  each header in slides[2].content.table.headers
+                    th= header
+              tbody
+                each row in slides[2].content.table.rows
+                  tr
+                    each cell in row
+                      td= cell
+          
+          .key-point
+            h3= slides[2].content.keyPoint.title
+            p= slides[2].content.keyPoint.description
+      
+      //- 投影片 4: 常見錯誤與好例子
+      .slide#slide4
+        .slide-content
+          h1= slides[3].title
+          
+          .examples-container
+            .bad-example
+              h3= slides[3].content.examples.bad.title
+              .example-content
+                p.bad-text= slides[3].content.examples.bad.text
+                p.explanation= slides[3].content.examples.bad.explanation
+            
+            .good-example
+              h3= slides[3].content.examples.good.title
+              .example-content
+                p.good-text= slides[3].content.examples.good.text
+                p.explanation= slides[3].content.examples.good.explanation
+          
+          .tip-box
+            h3= slides[3].content.tip.title
+            p= slides[3].content.tip.description
+      
+      //- 投影片 5: 為什麼BNI會員需要GEO
+      .slide#slide5
+        .slide-content
+          h1= slides[4].title
+          
+          .industries-grid
+            each industry in slides[4].content.industries
+              .industry
+                span.industry-icon= industry.icon
+                h4= industry.name
+                p= industry.description
+          
+          .ai-future
+            h3= slides[4].content.aiFuture.title
+            p= slides[4].content.aiFuture.description
+          
+          .bni-connection
+            h3= slides[4].content.bniConnection.title
+            p= slides[4].content.bniConnection.description
+      
+      //- 投影片 6: 品耀的解法
+      .slide#slide6
+        .slide-content
+          h1= slides[5].title
+          
+          .solution-process
+            each step in slides[5].content.process
+              .step
+                .step-number= step.step
+                h4= step.title
+                p= step.description
+          
+          .case-study
+            h3= slides[5].content.caseStudy.title
+            .before-after
+              .before
+                h4= slides[5].content.caseStudy.before.title
+                p= slides[5].content.caseStudy.before.description
+              .after
+                h4= slides[5].content.caseStudy.after.title
+                p= slides[5].content.caseStudy.after.description
+      
+      //- 投影片 7: 結尾與行動呼籲
+      .slide#slide7
+        .slide-content
+          h1= slides[6].title
+          
+          .cta-box
+            h2= slides[6].content.cta.title
+            p= slides[6].content.cta.description
+          
+          .contact-info
+            each contact in slides[6].content.contact
+              .contact-item
+                span.contact-icon= contact.icon
+                span= contact.text
+          
+          .qr-section
+            .qr-placeholder
+              span= slides[6].content.qrCode.icon
+              p= slides[6].content.qrCode.text
+          
+          .footer
+            p= slides[6].content.footer
+    
+    //- 導航按鈕
+    .navigation
+      button.nav-btn(onclick="previousSlide()") ←
+      span.slide-counter
+        span#currentSlide 1
+        |  / 
+        span#totalSlides 7
+      button.nav-btn(onclick="nextSlide()") →
+    
+    script(src="js/script.js")
