@@ -259,6 +259,16 @@ h4
   color: $light-text
   font-style: italic
 
+.reasons
+  margin-top: 15px
+  padding-left: 20px
+  
+  li
+    color: $light-text
+    font-size: 0.9rem
+    margin-bottom: 5px
+    list-style-type: disc
+
 // 提示框
 .tip-box
   gradient-bg(#ecfdf5, #d1fae5)
@@ -340,28 +350,57 @@ h4
   font-weight: bold
   font-size: 1.2rem
 
-// 案例研究
-.case-study
-  margin: 30px 0
-
-.before-after
+// 改造前後對比
+.before-after-comparison
   display: grid
   grid-template-columns: 1fr 1fr
   gap: 30px
-  margin: 20px 0
+  margin: 30px 0
 
-.before, .after
+.before-section, .after-section
   background: $white
+  padding: 25px
+  border-radius: 15px
+  box-shadow: box-shadow()
+
+.before-section
+  border-left: 5px solid $error-color
+
+.after-section
+  border-left: 5px solid $success-color
+
+.quote-box
+  background: #f8fafc
   padding: 20px
   border-radius: 10px
-  box-shadow: box-shadow()
-  text-align: center
+  margin: 15px 0
+  
+  .quote
+    font-style: italic
+    color: $text-color
+    margin-bottom: 10px
+  
+  .ai-comment
+    color: $accent-color
+    font-size: 0.9rem
+    font-weight: 500
 
-.before
-  border-left: 4px solid $error-color
+.issues, .solutions
+  margin-top: 15px
+  padding-left: 20px
+  
+  li
+    color: $light-text
+    font-size: 0.9rem
+    margin-bottom: 8px
+    list-style-type: disc
 
-.after
-  border-left: 4px solid $success-color
+.results-section
+  background: gradient-bg(#dbeafe, #bfdbfe)
+  padding: 25px
+  border-radius: 15px
+  margin: 30px 0
+  border: 2px solid $secondary-color
 
 // CTA框
 .cta-box
@@ -376,6 +415,34 @@ h4
     color: $white
     font-size: 2rem
     margin-bottom: 15px
+
+.cta-button
+  background: $white
+  color: $secondary-color
+  border: none
+  padding: 15px 30px
+  border-radius: 25px
+  font-size: 1.1rem
+  font-weight: 600
+  cursor: pointer
+  transition: transform 0.3s ease
+  margin-top: 20px
+  
+  &:hover
+    transform: translateY(-2px)
+    box-shadow: 0 5px 15px rgba($white, 0.3)
+
+.company-info
+  margin: 30px 0
+  text-align: center
+  
+  h3
+    color: $accent-color
+    margin-bottom: 10px
+  
+  .consultant
+    color: $light-text
+    font-size: 1.1rem
 
 // 聯絡資訊
 .contact-info

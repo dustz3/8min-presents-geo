@@ -224,6 +224,16 @@ h4 {
   color: #6b7280;
   font-style: italic;
 }
+.reasons {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.reasons li {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
 .tip-box {
   background: linear-gradient(135deg, #ecfdf5, #d1fae5);
   padding: 20px;
@@ -301,28 +311,59 @@ h4 {
   font-weight: bold;
   font-size: 1.2rem;
 }
-.case-study {
-  margin: 30px 0;
-}
-.before-after {
+.before-after-comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin: 20px 0;
+  margin: 30px 0;
 }
-.before,
-.after {
+.before-section,
+.after-section {
   background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: box-shadow: 0 5px 15px rgba(0,0,0,0.1); 5px 15px rgba(0,0,0,0.1);
+}
+.before-section {
+  border-left: 5px solid #ef4444;
+}
+.after-section {
+  border-left: 5px solid #10b981;
+}
+.quote-box {
+  background: #f8fafc;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: box-shadow: 0 5px 15px rgba(0,0,0,0.1); 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
+  margin: 15px 0;
 }
-.before {
-  border-left: 4px solid #ef4444;
+.quote-box .quote {
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
-.after {
-  border-left: 4px solid #10b981;
+.quote-box .ai-comment {
+  color: #1e40af;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.issues,
+.solutions {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.issues li,
+.solutions li {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+.results-section {
+  background: background: linear-gradient(135deg, #dbeafe, #bfdbfe);;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+  border: 2px solid #3b82f6;
 }
 .cta-box {
   background: linear-gradient(135deg, #3b82f6, #1e40af);
@@ -336,6 +377,34 @@ h4 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 15px;
+}
+.cta-button {
+  background: #fff;
+  color: #3b82f6;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+}
+.company-info {
+  margin: 30px 0;
+  text-align: center;
+}
+.company-info h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+.company-info .consultant {
+  color: #6b7280;
+  font-size: 1.1rem;
 }
 .contact-info {
   margin: 30px 0;

@@ -85,12 +85,18 @@ html(lang="zh-TW")
               .example-content
                 p.bad-text= slides[3].content.examples.bad.text
                 p.explanation= slides[3].content.examples.bad.explanation
+                ul.reasons
+                  each reason in slides[3].content.examples.bad.reasons
+                    li= reason
             
             .good-example
               h3= slides[3].content.examples.good.title
               .example-content
                 p.good-text= slides[3].content.examples.good.text
                 p.explanation= slides[3].content.examples.good.explanation
+                ul.reasons
+                  each reason in slides[3].content.examples.good.reasons
+                    li= reason
           
           .tip-box
             h3= slides[3].content.tip.title
@@ -121,22 +127,28 @@ html(lang="zh-TW")
         .slide-content
           h1= slides[5].title
           
-          .solution-process
-            each step in slides[5].content.process
-              .step
-                .step-number= step.step
-                h4= step.title
-                p= step.description
+          .before-after-comparison
+            .before-section
+              h3= slides[5].content.beforeAfter.before.title
+              .quote-box
+                p.quote= slides[5].content.beforeAfter.before.quote
+                p.ai-comment= slides[5].content.beforeAfter.before.aiComment
+                ul.issues
+                  each issue in slides[5].content.beforeAfter.before.issues
+                    li= issue
+            
+            .after-section
+              h3= slides[5].content.beforeAfter.after.title
+              .quote-box
+                p.quote= slides[5].content.beforeAfter.after.quote
+                p.ai-comment= slides[5].content.beforeAfter.after.aiComment
+                ul.solutions
+                  each solution in slides[5].content.beforeAfter.after.solutions
+                    li= solution
           
-          .case-study
-            h3= slides[5].content.caseStudy.title
-            .before-after
-              .before
-                h4= slides[5].content.caseStudy.before.title
-                p= slides[5].content.caseStudy.before.description
-              .after
-                h4= slides[5].content.caseStudy.after.title
-                p= slides[5].content.caseStudy.after.description
+          .results-section
+            h3= slides[5].content.results.title
+            p= slides[5].content.results.description
       
       //- 投影片 7: 結尾與行動呼籲
       .slide#slide7
@@ -146,6 +158,11 @@ html(lang="zh-TW")
           .cta-box
             h2= slides[6].content.cta.title
             p= slides[6].content.cta.description
+            button.cta-button= slides[6].content.cta.button
+          
+          .company-info
+            h3= slides[6].content.company.title
+            p.consultant= slides[6].content.company.consultant
           
           .contact-info
             each contact in slides[6].content.contact
