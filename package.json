@@ -1,0 +1,29 @@
+{
+  "name": "8min-presents-geo",
+  "version": "1.0.0",
+  "description": "讓AI幫你曝光：從SEO到GEO的網站進化 - BNI簡報",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "echo 'Deploy to GitHub Pages'"
+  },
+  "keywords": [
+    "presentation",
+    "GEO",
+    "SEO",
+    "AI",
+    "BNI",
+    "website-optimization"
+  ],
+  "author": "品耀數位行銷",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/8min-presents-geo.git"
+  },
+  "homepage": "https://yourusername.github.io/8min-presents-geo",
+  "devDependencies": {},
+  "dependencies": {}
+}
